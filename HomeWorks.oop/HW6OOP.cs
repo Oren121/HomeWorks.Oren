@@ -7,7 +7,7 @@
         public static void Run()
         {
             //List<string> list = new List<string>() { "hghghg", "hghghh" };
-
+            //fdgfdf
             Course s1 = new Course("Math", "Hadva a", 1, new List<string> { "Roei", "Oren", "Matan", "Itay", "Oz", "Gad" }, CategoryType.Webmaster);
 
             Console.WriteLine(s1.DisplayCourseInfo());
