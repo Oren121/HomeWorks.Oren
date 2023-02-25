@@ -38,12 +38,12 @@ namespace Demos.HackerU.Wpf
         /// <param name="e"></param>
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Student s = new Student(txtName.Text, txtId.Text,int.Parse(txtGrade.Text));
+            Student s = new Student(txtName.Text, txtId.Text, int.Parse(txtGrade.Text));
             studentList.Add(s);
             UpdateStudentsListBox();
         }
@@ -59,7 +59,7 @@ namespace Demos.HackerU.Wpf
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            
+
             var indexSelected = listBoxStudents.SelectedIndex;
             if (indexSelected >= 0)
             {
@@ -73,12 +73,13 @@ namespace Demos.HackerU.Wpf
             string contentToFile = "";
             foreach (Student s in studentList)
             {
-                contentToFile += s.ShowStudent()+Environment.NewLine;
+                contentToFile += s.ShowStudent() + Environment.NewLine;
             }
 
-            System.IO.File.WriteAllText("students.txt",contentToFile);
-            
-        
+            System.IO.File.WriteAllText("students.txt", contentToFile);
+
+
         }
+
     }
 }

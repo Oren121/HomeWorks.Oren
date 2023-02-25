@@ -18,15 +18,15 @@ namespace Demos.HackerU.HomeWorks
         {
             string StringToReturn = "";
             string DataString = "";
-            Products.ForEach(word => { DataString += word.GetAsText() + ","; });
+            Products.ForEach(word => { DataString += word.GetAsText() + "\n"; });
             DataString = DataString.TrimEnd(',');
-            StringToReturn = $"Id:{Id}, Title:{Title},Products:{DataString}";
+            StringToReturn = $"Id:{Id} \nTitle:{Title} \nProducts:{DataString}";
             return StringToReturn;
         }
         public string GetAsTextShort()
         {
             string StringToReturn = "";
-            StringToReturn = $"Id:{Id}, Title:{Title}";
+            StringToReturn = $"Id:{Id} \nTitle:{Title}";
             return StringToReturn;
         }
         public void AddProduct(Product newProductToAdd)

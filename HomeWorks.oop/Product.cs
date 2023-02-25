@@ -40,16 +40,15 @@ namespace Demos.HackerU.HomeWorks
         {
             string StringToReturn = "";
             string KeyWrordsString = "";
-            Keywords.ForEach(word => { KeyWrordsString += word + ","; });
-            KeyWrordsString = KeyWrordsString.TrimEnd(',');
-            StringToReturn = $"Id:{Id}, Title:{Title}, Description:{Description}, Price:{Price},KeyWords:{KeyWrordsString}";
+            Keywords.ForEach(word => { KeyWrordsString += word + "\n"; });
+            StringToReturn = $"Id:{Id} \nTitle:{Title} \nDescription:{Description} \nPrice:{Price} \nKeyWords:{KeyWrordsString} \n";
             return StringToReturn;
         }
 
         public string GetAsTextShort()
         {
             string StringToReturn = "";
-            StringToReturn = $"Id:{Id}, Title:{Title}, Description:{Description}, Price:{Price}";
+            StringToReturn = $"Id:{Id} \nTitle:{Title} \nDescription:{Description} \nPrice:{Price} \n";
             return StringToReturn;
         }
 
