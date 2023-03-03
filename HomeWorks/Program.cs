@@ -1,5 +1,6 @@
 ﻿using Demos.HackerU.HomeWorks;
 using HomeWorks.oop.HW8.PersonHW;
+using HomeWorks.oop.HW8.PokemonHW;
 
 namespace HomeWorks
 {
@@ -7,7 +8,7 @@ namespace HomeWorks
     {
         static void Main(string[] args)
         {
-            HW8OOP.Run();
+            PokemonOOP.Run();
             Console.WriteLine("Hello, World!");
             Console.ReadKey();
         }
