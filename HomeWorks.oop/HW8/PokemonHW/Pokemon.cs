@@ -22,6 +22,8 @@ namespace HomeWorks.oop.HW8.PokemonHW
             Name = "Nameless";
         }
 
+
+
         public string Id { get; set; }
         public string Name { get; set; }
         public int LifePower { get; set; } = 100;
@@ -36,6 +38,7 @@ namespace HomeWorks.oop.HW8.PokemonHW
                 {
                     defenser.LifePower -= ammunitionPower / 2;
                     AmmunitionPower -= ammunitionPower;
+                    Console.WriteLine("attacked");
                     defenser.CheckAlive();
                 }
                 else
