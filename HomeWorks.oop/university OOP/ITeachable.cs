@@ -8,9 +8,6 @@ namespace HomeWorks.oop.university_OOP
 {
     public interface ITeachable
     {
-        void Teach(Course course)
-        {
-            string jkbdf = string.Empty;
-        }
+        void Teach(Course course);
     }
 }

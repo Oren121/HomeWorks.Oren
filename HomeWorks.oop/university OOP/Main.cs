@@ -14,9 +14,12 @@ namespace HomeWorks.oop.university_OOP
             Student student = new Student();
             Student student2 = new Student();
             Student student3 = new Student();
-            student.DisplayInfo();
-            student2.DisplayInfo();
-            student3.DisplayInfo();
+            University u1 = new University();
+            Course course1 = new Course();
+            Course course2 = new Course();
+            u1.EnrollStudent(student2, course1);
+            FacultyMember f1 = new FacultyMember();
+            f1.AssignGrades(course2, student2);
 
 
         }

@@ -33,5 +33,6 @@ namespace HomeWorks.oop.university_OOP
             $"Department: {Department}\n";
             Console.WriteLine(Info);
         }
+
     }
 }

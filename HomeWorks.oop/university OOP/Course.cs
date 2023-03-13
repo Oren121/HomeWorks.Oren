@@ -13,14 +13,14 @@ namespace HomeWorks.oop.university_OOP
             CourseCode = 000;
             CourseName = "";
         }
-        public Course(int courseCode, string courseName, Faculty faculty, List<Student> studentList)
+        public Course(int courseCode, string courseName, FacultyMember faculty, List<Student> studentList)
         {
             CourseCode = courseCode;
             CourseName = courseName;
             Faculty = faculty;
             StudentList = studentList;
         }
-        public Course(int courseCode, string courseName, Faculty faculty)
+        public Course(int courseCode, string courseName, FacultyMember faculty)
         {
             CourseCode = courseCode;
             CourseName = courseName;
@@ -28,7 +28,7 @@ namespace HomeWorks.oop.university_OOP
         }
         public int CourseCode { get; set; }
         public string CourseName { get; set; }
-        public Faculty Faculty { get; set; }
+        public FacultyMember Faculty { get; set; }
         public List<Student> StudentList { get; set; } = new List<Student> { };
         public List<double> GradePoints { get; set; } = new List<double> { };
 
